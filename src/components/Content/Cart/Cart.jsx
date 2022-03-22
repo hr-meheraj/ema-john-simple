@@ -8,11 +8,11 @@ const Cart = ({data}) => {
     <div className='cart'>
 
       <h2>Order Summary</h2>
-      <p> Selected Item: <strong>{data.length}</strong></p>
-      <p> Sub-Total: <strong>{price}</strong> </p>
-      <p> Tax: <strong>{tax} </strong></p>
+      <p> Selected Item: <strong>${data.length}</strong></p>
+      <p> Sub-Total: <strong>${price}</strong> </p>
+      <p> Tax: <strong>${tax} </strong></p>
       <hr/>
-      <h3> Total: <strong>{total}</strong> </h3>
+      <h3> Total: <strong>${total}</strong> </h3>
     </div>
   )
 }
