@@ -1,4 +1,5 @@
 import React from 'react'
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import './Card.css'
 const Item = ({product, handleClick}) => {
   const { id, img, name, price, ratings } = product;
@@ -10,7 +11,7 @@ const Item = ({product, handleClick}) => {
         <p> Price: <strong>${price} </strong> </p>
         <p> Ratings: <strong>{ratings} </strong></p>
       </div>
-      <button onClick={() => handleClick(price)}className='cart-btn'> Add to Cart </button>
+      <button onClick={() => handleClick(price)}className='cart-btn'><span>Add to Cart</span> <span><ShoppingCartIcon/></span></button>
     </div>
   )
 }
