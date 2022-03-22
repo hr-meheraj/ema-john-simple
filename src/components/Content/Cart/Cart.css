@@ -1,0 +1,17 @@
+.cart{
+  background: rgba(255, 153, 0, 0.3);
+  padding:20px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  position: fixed;
+  top:50px;
+  right:0;
+  bottom: 0;
+}
+
+@media screen and (max-width:600px){
+  .cart{
+    display: none;
+  }
+}
